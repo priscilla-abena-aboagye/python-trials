@@ -19,10 +19,17 @@ while is_running:
         guess = int(guess)
         guesses += 1
 
-        if guess > answer:
+        if guess < lowest_number or guess > highest_number:
+            print("The number is out of range")
+            print(f"Please select a number between {lowest_number} and {highest_number}")
+        elif guess > answer:
             print("Too High! Try again")
         elif guess < answer:
             print("Too Low! Try again")
+        else:
+            print(f"Correct! Tha answer was {answer}")
+            print(f"It took {guesses} guesses for you to get the amswer")
+            is_running = False
     else:
         print("Invalid")
         print(f"Please select a number between {lowest_number} and {highest_number}")
