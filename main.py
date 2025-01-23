@@ -13,13 +13,23 @@ print("------------------------------------")
 
 
 while is_running:
-    guess = input("Select your number: ")
+    guess = input("Enter your guess: ")
 
-    if not guess.isdigit():
+    if guess.isdigit():
+        guess = int(guess)
+        guesses += 1
+
+        if guess > answer:
+            print("Too High! Try again")
+        elif guess < answer:
+            print("Too Low! Try again")
+    else:
         print("Invalid")
         print(f"Please select a number between {lowest_number} and {highest_number}")
-    else: 
-        pass
+
+
+
+    
 
 
 # print(answer)
