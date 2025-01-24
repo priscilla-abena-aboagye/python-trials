@@ -3,6 +3,7 @@ import random
 lowest_number = 1
 highest_number = 50
 answer = random.randint(lowest_number, highest_number)
+print("python's answer = ", answer)
 guesses = 0
 is_running = True
 
@@ -30,6 +31,7 @@ while is_running:
             print(f"Correct! Tha answer was {answer}")
             print(f"It took {guesses} guesses for you to get the amswer")
             is_running = False
+    
     else:
         print("Invalid")
         print(f"Please select a number between {lowest_number} and {highest_number}")
