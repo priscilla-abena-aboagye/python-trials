@@ -1,5 +1,6 @@
 # Improving python skills using Bro Code
 
+'''
 # Strings
 first_name = "Prscilla"
 food = "banku"
@@ -54,4 +55,35 @@ year_3 = str(year)
 year_4 = bool(year)
 
 print(year_1, year_2, year_3, year_4)
+
+'''
+
+# Input
+user_name = input("What's your name?: ")
+user_age = int(input("What is your age?: "))
+user_age = user_age + 1
+print(f"Hello {user_name}!")
+print("HAPPY BIRTHDAY!")
+print(f"You are {user_age} years old")
+
+
+# Calculating for the area of a rectangle
+
+user_length = float(input("Enter the length (cm): "))
+user_width = float(input("Enter your width (cm): "))
+
+area = user_length * user_width
+print(f"The area of the rectangle is {area}cm^2")
+
+# Shopping cart Program
+
+item = input("What item would you like to buy?: ")
+price = float(input("What is the price?: "))
+quantity = int(input("How many will you buy?: "))
+amount = price * quantity
+
+print(f"{item} cost ${price}. Purchasing {quantity} will the cost ${amount}")
+
+
+
 
