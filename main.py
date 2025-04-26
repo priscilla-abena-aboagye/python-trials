@@ -56,7 +56,7 @@ year_4 = bool(year)
 
 print(year_1, year_2, year_3, year_4)
 
-'''
+
 
 # Input
 user_name = input("What's your name?: ")
@@ -84,6 +84,15 @@ amount = price * quantity
 
 print(f"{item} cost ${price}. Purchasing {quantity} will the cost ${amount}")
 
+'''
 
+# Madlibs game
+status = input("Is the sun up or down?: ")
+mood = input("How are you feeling today?: ")
+influence = input("What changes your mood?: ")
+status_1 = input(f"How do you feel after {influence}?: ")
+
+print(f"The sun is {status} today. I am really {mood}. I have my {influence} to make me {status_1}.")
+print(f"Since I have {influence}, I am sure to be {status_1}")
 
 
