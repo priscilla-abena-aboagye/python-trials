@@ -42,10 +42,16 @@ if is_online:
 else:
     print("You are NOT online")
 
-# Assignment
+# Typecasting
 name = "Priscilla"
 year = 2025
 amount = 3.7
 student = True
 
+year_1 = int(year)
+year_2 = float(year)
+year_3 = str(year)
+year_4 = bool(year)
+
+print(year_1, year_2, year_3, year_4)
 
