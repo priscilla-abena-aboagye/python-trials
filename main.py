@@ -1,4 +1,5 @@
 # Improving python skills using Bro Code
+import math
 
 '''
 # Strings
@@ -84,8 +85,6 @@ amount = price * quantity
 
 print(f"{item} cost ${price}. Purchasing {quantity} will the cost ${amount}")
 
-'''
-
 # Madlibs game
 status = input("Is the sun up or down?: ")
 mood = input("How are you feeling today?: ")
@@ -95,4 +94,17 @@ status_1 = input(f"How do you feel after {influence}?: ")
 print(f"The sun is {status} today. I am really {mood}. I have my {influence} to make me {status_1}.")
 print(f"Since I have {influence}, I am sure to be {status_1}")
 
+'''
+
+# Arithmetic
+ 
+x = 4
+y = 4.55
+z = 12
+
+round_num= round(y)
+max_num = max(x, y, z)
+min_num = min(x, y, z)
+exponent = pow(x, 3)
+print(round_num, max_num, min_num, exponent)
 
