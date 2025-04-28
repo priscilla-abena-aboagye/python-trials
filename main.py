@@ -94,7 +94,6 @@ status_1 = input(f"How do you feel after {influence}?: ")
 print(f"The sun is {status} today. I am really {mood}. I have my {influence} to make me {status_1}.")
 print(f"Since I have {influence}, I am sure to be {status_1}")
 
-'''
 
 # Arithmetic
  
@@ -112,4 +111,13 @@ square_num = math.sqrt(z)
 print(round_num, max_num, min_num, exponent)
 print(round_up, round_down, square_num)
 
+
+'''
+
+# Circumference of a circle
+
+user_raduis = float(input("Enter the raduis of the circle(cm): "))
+
+circumference = 2 * (math.pi) * user_raduis
+print(f"The circumference of the circle with radius {user_raduis}cm is {round(circumference, 3)}cm")
 
