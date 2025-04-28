@@ -121,3 +121,16 @@ user_raduis = float(input("Enter the raduis of the circle(cm): "))
 circumference = 2 * (math.pi) * user_raduis
 print(f"The circumference of the circle with radius {user_raduis}cm is {round(circumference, 3)}cm")
 
+# Area of a circle
+
+user_area_raduis = float(input("Enter the raduis of the circle(cm): "))
+area = (math.pi) * user_area_raduis ** 2
+print(f"The area of the circle with raduis {user_area_raduis}cm is {round(area, 3)}cm^2")
+
+# Hypotenus of a triangle
+
+user_adjacent = float(input("Enter the adjacent length(cm): "))
+user_opposite = float(input("Enter the opposite lenghth(cm): "))
+hypothenus = math.sqrt(pow(user_adjacent, 2) + pow(user_opposite, 2))
+print(f"The hypothenus for the triangle with an adjacent of {user_adjacent}cm and an opposite of {user_opposite}cm is {hypothenus}")
+
