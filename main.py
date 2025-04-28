@@ -98,7 +98,7 @@ print(f"Since I have {influence}, I am sure to be {status_1}")
 
 # Arithmetic
  
-x = 4
+x = 3.2
 y = 4.55
 z = 12
 
@@ -106,5 +106,10 @@ round_num= round(y)
 max_num = max(x, y, z)
 min_num = min(x, y, z)
 exponent = pow(x, 3)
+round_up = math.ceil(x)
+round_down = math.floor(y)
+square_num = math.sqrt(z)
 print(round_num, max_num, min_num, exponent)
+print(round_up, round_down, square_num)
+
 
