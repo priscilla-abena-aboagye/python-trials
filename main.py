@@ -111,9 +111,6 @@ square_num = math.sqrt(z)
 print(round_num, max_num, min_num, exponent)
 print(round_up, round_down, square_num)
 
-
-'''
-
 # Circumference of a circle
 
 user_raduis = float(input("Enter the raduis of the circle(cm): "))
@@ -134,3 +131,19 @@ user_opposite = float(input("Enter the opposite lenghth(cm): "))
 hypothenus = math.sqrt(pow(user_adjacent, 2) + pow(user_opposite, 2))
 print(f"The hypothenus for the triangle with an adjacent of {user_adjacent}cm and an opposite of {user_opposite}cm is {hypothenus}")
 
+
+
+'''
+
+# If statement
+response = input("Did you drink coffee today (Y/N)?: ")
+if response == "Y":
+    print("No more coffee for you!")
+else: 
+    print("You can have only one coffee for the day")
+
+user_name = input("Enter your name: ")
+if user_name == "":
+    print("You did not enter your name!")
+else:
+    print(f"Hello {user_name}")
