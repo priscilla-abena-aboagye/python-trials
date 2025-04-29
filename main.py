@@ -147,3 +147,12 @@ if user_name == "":
     print("You did not enter your name!")
 else:
     print(f"Hello {user_name}")
+
+user_age_var = int(input("Enter your age: "))
+
+if  user_age_var >= 18:
+    print("You can sign up")
+elif user_age_var < 0:
+    print("You have not been born yet!")
+else:
+    print("You must be 18+ to sign up")
