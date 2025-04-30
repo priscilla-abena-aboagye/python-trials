@@ -166,10 +166,13 @@ answer = 0
 
 if user_operator == "+":
     answer = number_1 + number_2
+    print(round(answer, 3))
 elif user_operator == "-":
     answer = number_1 - number_2
+    print(round(answer, 3))
 elif user_operator == "*":
     answer = number_1 * number_2
-else:
+    print(round(answer, 3))
+elif user_operator == "/":
     answer = number_1 / number_2
-print(answer)
+    print(round(answer, 3))
