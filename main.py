@@ -131,10 +131,6 @@ user_opposite = float(input("Enter the opposite lenghth(cm): "))
 hypothenus = math.sqrt(pow(user_adjacent, 2) + pow(user_opposite, 2))
 print(f"The hypothenus for the triangle with an adjacent of {user_adjacent}cm and an opposite of {user_opposite}cm is {hypothenus}")
 
-
-
-'''
-
 # If statement
 response = input("Did you drink coffee today (Y/N)?: ")
 if response == "Y":
@@ -156,3 +152,24 @@ elif user_age_var < 0:
     print("You have not been born yet!")
 else:
     print("You must be 18+ to sign up")
+
+'''
+
+
+
+# Python Calulator
+
+user_operator = input("Enter ypur operand (+, -, *, /): ")
+number_1 = float(input("Enter the first number: "))
+number_2 = float(input("Enter the second number: "))
+answer = 0
+
+if user_operator == "+":
+    answer = number_1 + number_2
+elif user_operator == "-":
+    answer = number_1 - number_2
+elif user_operator == "*":
+    answer = number_1 * number_2
+else:
+    answer = number_1 / number_2
+print(answer)
