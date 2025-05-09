@@ -152,12 +152,7 @@ elif user_age_var < 0:
     print("You have not been born yet!")
 else:
     print("You must be 18+ to sign up")
-
-'''
-
-
-
-# Python Calulator
+    # Python Calulator
 
 user_operator = input("Enter ypur operand (+, -, *, /): ")
 number_1 = float(input("Enter the first number: "))
@@ -178,3 +173,10 @@ elif user_operator == "/":
     print(round(answer, 3))
 else:
     print(f"{user_operator} is not a valid operaor")
+
+
+'''
+
+# Weight conertor
+
+
