@@ -179,6 +179,10 @@ else:
 
 # Weight conertor
 weight = float(input("Enter your weight(kg): "))
-convert_weight = weight / 1000
-print(convert_weight)
+unit = input("Is your weight Kilogram or Pounds(K/L): ")
+if unit == "K":
+    ans = weight * 2.20462
+else:
+    ans = weight / 2.20462
+print(f"Your converted weight is {ans}")
 
