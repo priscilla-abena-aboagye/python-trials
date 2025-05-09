@@ -178,5 +178,7 @@ else:
 '''
 
 # Weight conertor
-
+weight = float(input("Enter your weight(kg): "))
+convert_weight = weight / 1000
+print(convert_weight)
 
