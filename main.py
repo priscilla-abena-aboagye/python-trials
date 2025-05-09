@@ -181,8 +181,14 @@ else:
 weight = float(input("Enter your weight(kg): "))
 unit = input("Is your weight Kilogram or Pounds(K/L): ")
 if unit == "K":
-    ans = weight * 2.20462
+    ans = weight * 2.205
+    unit = "kgs"
+    print(f"Your converted weight is {ans}{unit}")
+elif unit == "L":
+    ans = weight / 2.205
+    unit = "Lbs"
+    print(f"Your converted weight is {ans}{unit}")
 else:
-    ans = weight / 2.20462
-print(f"Your converted weight is {ans}")
+    print(f"{unit} was not valid")
+
 
