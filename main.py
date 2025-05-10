@@ -174,9 +174,6 @@ elif user_operator == "/":
 else:
     print(f"{user_operator} is not a valid operaor")
 
-
-'''
-
 # Weight conertor
 weight = float(input("Enter your weight(kg): "))
 unit = input("Is your weight Kilogram or Pounds(K/L): ")
@@ -190,5 +187,19 @@ elif unit == "L":
     print(f"Your converted weight is {ans}{unit}")
 else:
     print(f"{unit} was not valid")
+
+'''
+# Temperature conversion
+
+unit = input("Enter your unit(K/F) to be converted to degree celcuis: ")
+figure = float(input("Enter the temperature: "))
+if unit == "K":
+    celcuis = figure - 273.15
+    print(f"Your converted {figure}{unit} is {round(celcuis, 3)}")
+elif unit == "F":
+    celcuis = (figure - 32) * (5 / 9)
+    print(f"Your converted {figure}{unit} is {round(celcuis, 3)}") 
+else:
+    print("It is invalid")
 
 
