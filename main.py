@@ -191,15 +191,15 @@ else:
 '''
 # Temperature conversion
 
-unit = input("Enter your unit(K/F) to be converted to degree celcuis: ")
+unit = input("Enter your unit(K/F) to be converted to degree celsius: ")
 figure = float(input("Enter the temperature: "))
 if unit == "K":
-    celcuis = figure - 273.15
-    print(f"Your converted {figure}{unit} is {round(celcuis, 3)}")
+    celsius = figure - 273.15
+    print(f"Your converted {figure}{unit} is {round(celsius, 3)}celsius")
 elif unit == "F":
-    celcuis = (figure - 32) * (5 / 9)
-    print(f"Your converted {figure}{unit} is {round(celcuis, 3)}") 
+    celsius = (figure - 32) * (5 / 9)
+    print(f"Your converted {figure}{unit} is {round(celsius, 3)}{unit}") 
 else:
-    print("It is invalid")
+    print(f"This {unit} is not a unit")
 
 
