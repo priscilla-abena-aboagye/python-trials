@@ -187,9 +187,7 @@ elif unit == "L":
     print(f"Your converted weight is {ans}{unit}")
 else:
     print(f"{unit} was not valid")
-
-'''
-# Temperature conversion
+    # Temperature conversion
 
 unit = input("Enter your unit(K/F) to be converted to degree celsius: ")
 figure = float(input("Enter the temperature: "))
@@ -201,5 +199,8 @@ elif unit == "F":
     print(f"Your converted {figure}{unit} is {round(celsius, 3)}{unit}") 
 else:
     print(f"This {unit} is not a unit")
+
+'''
+
 
 
