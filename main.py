@@ -201,6 +201,14 @@ else:
     print(f"This {unit} is not a unit")
 
 '''
-
+# X if condition else Y
+number = 10
+a = 4
+b = 5
+print("Even" if number % 2 == 0 else "Odd")
+max_num = a if a > b else b
+min_num = a if a < b else b
+print(max_num)
+print(min_num)
 
 
