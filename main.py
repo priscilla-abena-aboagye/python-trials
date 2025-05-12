@@ -213,5 +213,13 @@ print(min_num)
 '''
 # Validate user input
 user_name = input("Enter your name: ")
-"User Name is not Valid" if len(user_name) > 12 else f"Hello {user_name}"
+if len(user_name) > 12:
+    print("User Name more than 12 characters")
+elif user_name == " ":
+    print("User Name should not contain spaces")
+elif user_name.isdigit():
+    print("User Name should not contain digits")
+else:
+    print(f"Hello {user_name}")
+
 
