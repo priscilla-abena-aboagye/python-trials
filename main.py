@@ -200,7 +200,6 @@ elif unit == "F":
 else:
     print(f"This {unit} is not a unit")
 
-'''
 # X if condition else Y
 number = 10
 a = 4
@@ -211,4 +210,8 @@ min_num = a if a < b else b
 print(max_num)
 print(min_num)
 
+'''
+# Validate user input
+user_name = input("Enter your name: ")
+"User Name is not Valid" if len(user_name) > 12 else f"Hello {user_name}"
 
