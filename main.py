@@ -215,9 +215,9 @@ print(min_num)
 user_name = input("Enter your name: ")
 if len(user_name) > 12:
     print("User Name more than 12 characters")
-elif user_name == " ":
+elif not user_name.find(" ") == -1:
     print("User Name should not contain spaces")
-elif user_name.isdigit():
+elif not user_name.isalpha():
     print("User Name should not contain digits")
 else:
     print(f"Hello {user_name}")
