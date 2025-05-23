@@ -174,7 +174,7 @@ elif user_operator == "/":
 else:
     print(f"{user_operator} is not a valid operaor")
 
-# Weight conertor
+# Weight convertor
 weight = float(input("Enter your weight(kg): "))
 unit = input("Is your weight Kilogram or Pounds(K/L): ")
 if unit == "K":
@@ -210,7 +210,7 @@ min_num = a if a < b else b
 print(max_num)
 print(min_num)
 
-'''
+
 # Validate user input
 user_name = input("Enter your name: ")
 if len(user_name) > 12:
@@ -222,4 +222,4 @@ elif not user_name.isalpha():
 else:
     print(f"Hello {user_name}")
 
-
+'''
