@@ -30,7 +30,7 @@ def product_of_two_num():
     print(f"The product of the numbers are {product}")
 product_of_two_num()
 
-'''
+
 
 # Q3
 def checks_the_sign():
@@ -52,4 +52,19 @@ def characters_of_name():
     print(num_of_char)
 characters_of_name()
 
-# Q5
+# Q5, Q6
+def list_colours():
+    colours = ["red", "yellow", "blue"] 
+    second_colour = colours[1]
+    print(second_colour)
+    colours.append("purple")
+    print(colours)
+list_colours() 
+
+# Q7
+def prints_items():
+    fruits = ["mango", "banana", "orange"]
+    for fruit in fruits:
+        print(fruit)
+prints_items()
+'''
