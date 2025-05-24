@@ -68,3 +68,27 @@ def prints_items():
         print(fruit)
 prints_items()
 '''
+# Q8
+def even_numbers():
+    for num in range(2, 11):
+        if num % 2 == 0:
+            print(num)
+even_numbers()
+
+# Q9
+def say_hello():
+    print("Hello!")
+say_hello()
+
+# Q10
+def greet_user():
+    print("Hi!.")
+greet_user()
+
+# Q11
+def sum_of_two_numbers():
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    sum_of_num = num1 + num2
+    print(sum_of_num)
+sum_of_two_numbers()
