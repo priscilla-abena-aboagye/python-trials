@@ -1,3 +1,4 @@
+'''
 def validates_user_input():
     user_age = input("Enter your age: ")
     if user_age.isdigit():
@@ -29,4 +30,26 @@ def product_of_two_num():
     print(f"The product of the numbers are {product}")
 product_of_two_num()
 
+'''
+
 # Q3
+def checks_the_sign():
+    user_input = int(input("Enter your number: "))
+    if user_input == 0:
+        print("Zero")
+    elif user_input > 0:
+        print("Positive")
+    else:
+        print("Negative")
+checks_the_sign()
+
+# Q4
+def characters_of_name():
+    user_name = input("Enter your name: ")
+    num_of_char = 0
+    for char in user_name:
+        num_of_char += 1
+    print(num_of_char)
+characters_of_name()
+
+# Q5
