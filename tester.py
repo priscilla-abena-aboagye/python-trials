@@ -107,3 +107,16 @@ def output():
 output()
 
 # Q14
+def case_convertor():
+    language = "python"
+    print(language.upper())
+case_convertor()
+
+# Q15
+def password_validator():
+    password = input("Enter your password: ")
+    if password == "admin123":
+        print("Access granted")
+    else:
+        print("Access denied")
+password_validator()
