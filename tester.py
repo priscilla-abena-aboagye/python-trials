@@ -92,7 +92,7 @@ def sum_of_two_numbers():
     sum_of_num = num1 + num2
     print(sum_of_num)
 sum_of_two_numbers()
-'''
+
 # Q12
 def first_and_last_letters():
     word = "butterfly"
@@ -120,3 +120,26 @@ def password_validator():
     else:
         print("Access denied")
 password_validator()
+'''
+#Q16
+def product_of_numbers():
+    number1 = int(input("Enter your first number: "))
+    number2 = int(input("Enter your second number: "))
+    product = number1 * number2
+    print(product)
+product_of_numbers()
+
+#Q17
+def favorite_colors():
+    colors = ["blue", "green", "brown"]
+    print(colors[1])
+favorite_colors()
+
+# Q18
+def user_bio():
+    user_name = input("Enter your name: ")
+    user_age = input("Enter your age: ")
+    print(f"Hi {user_name}, you are {user_age} years old")
+user_bio()
+
+#Q19
