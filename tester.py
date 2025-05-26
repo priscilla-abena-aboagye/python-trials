@@ -67,7 +67,7 @@ def prints_items():
     for fruit in fruits:
         print(fruit)
 prints_items()
-'''
+
 # Q8
 def even_numbers():
     for num in range(2, 11):
@@ -92,3 +92,18 @@ def sum_of_two_numbers():
     sum_of_num = num1 + num2
     print(sum_of_num)
 sum_of_two_numbers()
+'''
+# Q12
+def first_and_last_letters():
+    word = "butterfly"
+    print(word[0])
+    print(word[-1])
+first_and_last_letters()
+
+# Q13
+def output():
+    pets = ["dog", "cat", "fish"] 
+    print(pets[-1]) # "fish"
+output()
+
+# Q14
