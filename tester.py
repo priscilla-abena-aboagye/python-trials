@@ -141,7 +141,6 @@ def user_bio():
     user_age = input("Enter your age: ")
     print(f"Hi {user_name}, you are {user_age} years old")
 user_bio()
-'''
 
 #Q19
 def square_number():
@@ -165,3 +164,43 @@ def prints_even_numbers():
         if index_num % 2 == 0 :
             print(index_num)
 prints_even_numbers()
+'''
+
+# Q22
+def key_value_pair():
+    user_info = {
+        "name": "Abena",
+        "age": 13,
+        "city": "Accra"
+    }
+    print(user_info["city"])
+key_value_pair()
+
+# Q23
+def counts_sentences():
+    user_sentence = input("Enter a sentence: ")
+    word_count = 0
+    for word in user_sentence:
+        word_count += 1
+    print(word_count)
+counts_sentences()
+
+# Q24
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+ans = is_even(4)
+print(ans)
+
+# Q25
+def checks_status():
+    number = int(input("Enter your number: "))
+    if number == 0:
+        print("Zero")
+    elif number > 0:
+        print("Positive")
+    else:
+        print("Negative")
+checks_status()
