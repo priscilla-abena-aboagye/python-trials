@@ -120,7 +120,7 @@ def password_validator():
     else:
         print("Access denied")
 password_validator()
-'''
+
 #Q16
 def product_of_numbers():
     number1 = int(input("Enter your first number: "))
@@ -141,5 +141,27 @@ def user_bio():
     user_age = input("Enter your age: ")
     print(f"Hi {user_name}, you are {user_age} years old")
 user_bio()
+'''
 
 #Q19
+def square_number():
+    user_num = int(input("Enter the number to be squared: "))
+    square_num = pow(user_num, 2)
+    return square_num
+ans = square_number()
+print(ans)
+
+# Q20
+def prints_python():
+    for i in "python":
+        print(i, "\n")
+prints_python()
+
+# Q21
+def prints_even_numbers():
+    num = [3, 6, 9, 12, 15]
+    for n in range(0, len(num)):
+        index_num = num[n]
+        if index_num % 2 == 0 :
+            print(index_num)
+prints_even_numbers()
