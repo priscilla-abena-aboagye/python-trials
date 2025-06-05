@@ -1,4 +1,4 @@
-'''
+
 def validates_user_input():
     user_age = input("Enter your age: ")
     if user_age.isdigit():
@@ -17,7 +17,6 @@ def favourite_animal():
     fav_ani = input("Enter your favourite animal: ")
     if fav_ani.isdigit():
         print("Please enter an animal")
-        input("Enter your favourite animal: ")
     else:
         print("I like too!")
 favourite_animal()
@@ -81,17 +80,14 @@ def say_hello():
 say_hello()
 
 # Q10
-def greet_user():
-    print("Hi!.")
-greet_user()
+def greet_user(name):
+    print(f"Hi! {name}.")
+greet_user("Abena")
 
 # Q11
-def sum_of_two_numbers():
-    num1 = int(input("Enter your first number: "))
-    num2 = int(input("Enter your second number: "))
-    sum_of_num = num1 + num2
-    print(sum_of_num)
-sum_of_two_numbers()
+def sum_of_two_numbers(num1, num2):
+    return num1 + num2
+print(sum_of_two_numbers(4, 6))
 
 # Q12
 def first_and_last_letters():
@@ -143,28 +139,25 @@ def user_bio():
 user_bio()
 
 #Q19
-def square_number():
-    user_num = int(input("Enter the number to be squared: "))
-    square_num = pow(user_num, 2)
-    return square_num
-ans = square_number()
+def square_number(num):
+    return pow(num, 2)
+ans = square_number(6)
 print(ans)
 
 # Q20
 def prints_python():
     for i in "python":
-        print(i, "\n")
+        print(i)
 prints_python()
 
 # Q21
 def prints_even_numbers():
-    num = [3, 6, 9, 12, 15]
-    for n in range(0, len(num)):
-        index_num = num[n]
-        if index_num % 2 == 0 :
-            print(index_num)
+    nums = [3, 6, 9, 12, 15]
+    for num in nums:
+        if num % 2 == 0 :
+            print(num)
 prints_even_numbers()
-'''
+
 
 # Q22
 def key_value_pair():
@@ -179,18 +172,12 @@ key_value_pair()
 # Q23
 def counts_sentences():
     user_sentence = input("Enter a sentence: ")
-    word_count = 0
-    for word in user_sentence:
-        word_count += 1
-    print(word_count)
+    print(len(user_sentence))
 counts_sentences()
 
 # Q24
 def is_even(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+        return number % 2 == 0
 ans = is_even(4)
 print(ans)
 
