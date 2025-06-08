@@ -249,3 +249,12 @@ print(f"The value of number 1 is {num1:+,.2f}")#+234.55
 print(f"The value of number 2 is {num2: ,.2f}") # 123.46
 print(f"The value of number 3 is {num3:+,.2f}") #+4,335.98
 
+# while loop
+user_number = int(input("Enter a number between 1 and 10: "))
+while user_number < 1 or user_number > 10 :
+    print(f"{user_number} is not valid")
+    user_number = int(input("Enter a number between 1 and 10: "))
+
+print(f"Your number is {user_number}")
+
+
