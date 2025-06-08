@@ -224,5 +224,28 @@ else:
 
 '''
 
-# Indexing
+# Formatting specifiers {value: flags}
+num1 = 234.55344
+num2 = 123.456
+num3 = 4335.97978
+
+# number
+print(f"The value of number 1 is {num1:.2f}") #234.55
+# spaces
+print(f"The value of number 2 is {num2:10}") #   123.456
+# left justify
+print(f"The value of number 3 is {num3:<10}") #4335.97978 
+# right justify
+print(f"The value of number 3 is {num3:>20}") #          4335.97978
+# center align
+print(f"The value of number 3 is {num3:^20}") #     4335.97978
+# positive
+print(f"The value of number 1 is {num1:+}") #+234.55
+print(f"The value of number 1 is {num1: }") # 234.55
+# thousand separator
+print(f"The value of number 3 is {num3:,}") #4,335.97978
+# combination
+print(f"The value of number 1 is {num1:+,.2f}")#+234.55
+print(f"The value of number 2 is {num2: ,.2f}") # 123.46
+print(f"The value of number 3 is {num3:+,.2f}") #+4,335.98
 

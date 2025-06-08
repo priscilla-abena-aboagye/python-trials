@@ -7,6 +7,15 @@ This project is just a test of what I have learnt in Python
  ### Variables & Input
 Q1. Ask the user to enter their favorite animal and print:
 I like <animal> too!
+```py
+## Q1 
+def favourite_animal():
+    fav_ani = input("Enter your favourite animal: ")
+    if fav_ani.isdigit():
+        print("Please enter an animal")
+    else:
+        print("I like too!")
+```
 
 ### Math & Input
 Q2. Ask the user to enter two numbers and print their product.
