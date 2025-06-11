@@ -263,20 +263,26 @@ principal = 0
 rate = 0
 time = 0
 
-while principal <= 0:
+while True:
     principal = float(input("Enter the initial amount: "))
-    if principal <= 0:
+    if principal < 0:
         print("Principal should not be less than 0")
+    else:
+        break
 
-while rate <= 0:
+while True:
     rate = float(input("Enter the rate: "))
-    if rate <= 0:
+    if rate < 0:
         print("Rate should not be less than 0")
+    else:
+        break
 
-while time <= 0:
+while True:
     time = float(input("Enter the time amount: "))
-    if time <= 0:
+    if time < 0:
         print("Time should not be less than 0")
+    else: 
+        break
 
 final_amount = principal * pow(1 + (rate / 100), time)
 print(f"Your total amount after {time} year/s is: ${final_amount:.2f}")
