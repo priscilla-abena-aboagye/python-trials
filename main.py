@@ -222,7 +222,7 @@ elif not user_name.isalpha():
 else:
     print(f"Hello {user_name}")
 
-'''
+
 
 # Formatting specifiers {value: flags}
 num1 = 234.55344
@@ -256,5 +256,28 @@ while user_number < 1 or user_number > 10 :
     user_number = int(input("Enter a number between 1 and 10: "))
 
 print(f"Your number is {user_number}")
+'''
 
+# Python compound interest calculator
+principal = 0
+rate = 0
+time = 0
+
+while principal <= 0:
+    principal = float(input("Enter the initial amount: "))
+    if principal <= 0:
+        print("Principal should not be less than 0")
+
+while rate <= 0:
+    rate = float(input("Enter the rate: "))
+    if rate <= 0:
+        print("Rate should not be less than 0")
+
+while time <= 0:
+    time = float(input("Enter the time amount: "))
+    if time <= 0:
+        print("Time should not be less than 0")
+
+final_amount = principal * pow(1 + (rate / 100), time)
+print(f"Your total amount after {time} year/s is: ${final_amount:.2f}")
 
