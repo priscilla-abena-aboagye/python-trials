@@ -288,3 +288,16 @@ print(f"Your total amount after {time} year/s is: ${final_amount:.2f}")
 for counter in reversed(range(1, 11)):
     print(counter)
 print("HAPPY NEW YEAR!!!")
+
+# To skip over an iteration use Continue
+for x in range(1, 10):
+    if x == 3 or x == 5:
+        continue
+    else:
+        print(x) 
+# To leave or break from the loop use break
+for x in range(1, 10):
+    if x == 4:
+        break
+    else:
+        print(x)
