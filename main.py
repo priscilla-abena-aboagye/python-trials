@@ -256,7 +256,6 @@ while user_number < 1 or user_number > 10 :
     user_number = int(input("Enter a number between 1 and 10: "))
 
 print(f"Your number is {user_number}")
-'''
 
 # Python compound interest calculator
 principal = 0
@@ -264,26 +263,28 @@ rate = 0
 time = 0
 
 while True:
-    principal = float(input("Enter the initial amount: "))
+    principal = float(input("Enter the principal amount: "))
     if principal < 0:
-        print("Principal should not be less than 0")
+        print("Principal can not be less than zero")
     else:
         break
-
 while True:
     rate = float(input("Enter the rate: "))
     if rate < 0:
-        print("Rate should not be less than 0")
+        print("Rate can not be less than zero")
     else:
         break
-
 while True:
-    time = float(input("Enter the time amount: "))
+    time = float(input("Enter the Time: "))
     if time < 0:
-        print("Time should not be less than 0")
-    else: 
+        print("Time can not be less than zero")
+    else:
         break
 
 final_amount = principal * pow(1 + (rate / 100), time)
 print(f"Your total amount after {time} year/s is: ${final_amount:.2f}")
-
+'''
+# for loops
+for counter in reversed(range(1, 11)):
+    print(counter)
+print("HAPPY NEW YEAR!!!")
