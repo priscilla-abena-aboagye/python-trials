@@ -1,5 +1,6 @@
 # Improving python skills using Bro Code
 import math
+import time
 
 '''
 # Strings
@@ -283,9 +284,9 @@ while True:
 
 final_amount = principal * pow(1 + (rate / 100), time)
 print(f"Your total amount after {time} year/s is: ${final_amount:.2f}")
-'''
+
 # for loops
-for counter in reversed(range(1, 11)):
+for counter in reversed(range(1, 11)): # range(1, 11, -1)
     print(counter)
 print("HAPPY NEW YEAR!!!")
 
@@ -301,3 +302,13 @@ for x in range(1, 10):
         break
     else:
         print(x)
+'''
+        
+user_time = int(input("Enter the time in seconds: "))
+for x in range(user_time, 0, -1):
+    hours = x // 3600
+    minutes = (x % 3600) // 60
+    seconds = (x % 60)
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+    time.sleep(1)
+print("TIME'S UP!!!")
