@@ -312,10 +312,18 @@ for x in range(user_time, 0, -1):
     print(f"{hours:02}:{minutes:02}:{seconds:02}")
     time.sleep(1)
 print("TIME'S UP!!!")
-'''
+
 # Nested Loop
 for count in range(3):
     for x in range(1, 10):
         print(x, end=" ")
     print()
-
+'''
+print("Drawing a rectangle")
+rows = int(input("Enter the number of rows: "))
+columns = int(input("Enter the number of columns: "))
+symbol = input("Enter the symbol to use: ")
+for row in range(rows):
+    for col in range(columns):
+        print(symbol, end=" ")
+    print()
