@@ -318,7 +318,7 @@ for count in range(3):
     for x in range(1, 10):
         print(x, end=" ")
     print()
-'''
+
 print("Drawing a rectangle")
 rows = int(input("Enter the number of rows: "))
 columns = int(input("Enter the number of columns: "))
@@ -327,3 +327,4 @@ for row in range(rows):
     for col in range(columns):
         print(symbol, end=" ")
     print()
+'''

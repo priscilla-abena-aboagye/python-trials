@@ -4,7 +4,8 @@
 This project is just a test of what I have learnt in Python
 
 # Questions 
- ### Variables & Input
+## Section 1
+### Variables & Input
 Q1. Ask the user to enter their favorite animal and print:
 I like <animal> too!
 ```py
@@ -99,4 +100,4 @@ Define a function called is_even(number) that returns True if the number is even
 ### Q25.
 Write a program that checks if a number is positive, negative, or zero and prints the result.
 
-
+## Section 2
