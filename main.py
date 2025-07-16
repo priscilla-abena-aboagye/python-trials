@@ -329,7 +329,7 @@ for row in range(rows):
     print()
 '''
 # Shopping cart program using whille loop
-ans = []
+user_items = []
 total = 0
 
 while True:
@@ -337,8 +337,16 @@ while True:
     if food.lower() == "q":
         break
     price = input(f"Enter the price of {food}: $")
+    if not price.isdigit():
+        print(f"{price} is not a number. Please enter a number")
+        price = input(f"Enter the price of {food}: $")
+    price = float(price)
 
     output = f"{food} : {price}"
-    ans.append(output)
-print(ans)
+    user_items.append(output)
+    total += price
+print("----------YOUR CART----------") 
+for i in user_items:
+    print(i)
+print(f"Your total cost is {total}")
 
