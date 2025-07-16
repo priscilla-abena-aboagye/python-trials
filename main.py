@@ -328,3 +328,17 @@ for row in range(rows):
         print(symbol, end=" ")
     print()
 '''
+# Shopping cart program using whille loop
+ans = []
+total = 0
+
+while True:
+    food = input("Enter the food bought(q to quit): ")
+    if food.lower() == "q":
+        break
+    price = input(f"Enter the price of {food}: $")
+
+    output = f"{food} : {price}"
+    ans.append(output)
+print(ans)
+
