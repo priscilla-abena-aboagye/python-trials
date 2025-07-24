@@ -17,6 +17,3 @@ def check_status(number):
 		print(f"{number} is an odd number")
 check_status(22)
 '''
-import math_function
-result = math_function.add(2, 3)
-print(result)
