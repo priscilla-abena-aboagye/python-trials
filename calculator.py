@@ -8,3 +8,26 @@ print(addition)
 print(substraction)
 print(mul)
 print(div)
+
+x = "global  x"
+def trials():
+    y = "local y"
+    print(y)
+
+trials()
+print(x)
+
+x = "Global X"
+def test():
+    x = "Local X"
+    print(x)
+test()
+print(x)
+
+X = "Global X"
+def testing():
+    global X
+    X = "Local X"
+    print(X)
+testing()
+print(X)
