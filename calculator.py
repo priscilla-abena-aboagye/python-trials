@@ -40,3 +40,21 @@ m = min([5, 6, 7, 8])
 n = max([5, 6, 7, 8])
 print(m)
 print(n)
+
+# enclosing
+def outer():
+	a = "outer a"
+	def inner():
+		a = "inner a"
+		print(a)
+	inner()
+	print(a)
+outer()
+
+def outer():
+	a = "outer a"
+	def inner():
+		print(a)
+	inner()
+	print(a)
+outer()
