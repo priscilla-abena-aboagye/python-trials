@@ -9,6 +9,8 @@ print(substraction)
 print(mul)
 print(div)
 
+
+# Global and local scope
 x = "global  x"
 def trials():
     y = "local y"
@@ -31,3 +33,10 @@ def testing():
     print(X)
 testing()
 print(X)
+
+# built in
+import builtins
+m = min([5, 6, 7, 8])
+n = max([5, 6, 7, 8])
+print(m)
+print(n)
